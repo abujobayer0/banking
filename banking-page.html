@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baper bank</title>
+</head>
+<body class="bg-green-200">
+    <header class="mb-8">
+        <h2 class="text-6xl text-slate-700 mt-20 text-center">
+            Let's get some <span class="text-fuchsia-400">Mooooney!</span>
+        </h2>
+        </header>
+        <main class=" mx-auto">
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                            
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4  class="text-4xl">$<span id="deposit">
+                        00
+                    </span></h4>
+                </div>
+                <div class="bg-green-400 p-8 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-4xl">$<span id="withdraw-amount">00</span></h4>
+                </div>
+                <div class="bg-purple-400 p-8 rounded">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-4xl">$<span id="balance-total">00</span></h4>
+                </div>
+            </div>
+        </section>
+        <section class="grid mt-10 mx-auto gap-4 w-3/4 ml10 grid-cols-2">
+            <div class="py-8  bg-purple-400"  >
+                <h3
+class="text-white  px-6 text-2xl w-3/4  font-medium "
+                >
+please Deposit
+                </h3>
+                <input
+        type="text"
+        id="deposit-Input"
+        class="block w-3/4  ml-5    py-2 px-5 my-5  rounded border-2 border-violet-400 outline-none"
+        placeholder=" $ Deposit Ammount"
+                />
+                <button
+        id="deposit-button"
+        class="mx-6 rounded block bg-purple-500 text-white px-16 text-xl w-3/4 font-medium w-3/5 py-2 px-5 text-center"
+                >
+                    Deposit
+                </button>
+                </div>
+            <div class="py-8   bg-blue-400"  >
+                <h3
+                    class="text-white  px-6 text-2xl w-3/4  font-medium "
+                >
+                    Withdraw
+                </h3>
+                <input
+                    type="text"
+                    id="Withdraw-Input"
+                    class="block w-3/4  ml-5    py-2 px-5 my-5  rounded border-2 border-blue-400 outline-none"
+                    placeholder=" $ Withdraw Ammount"
+                />
+                <button
+                    id="Withdraw-button"
+                    class="mx-6 rounded block bg-blue-500 text-white px-16 text-xl w-3/4 font-medium w-3/5 py-2 px-5 text-center"
+                >
+                    Withdraw
+                </button>
+                    </div>
+        </section>
+        </main>
+        <footer><h4 class="text-center mt-8">CopyRight Munna 2022</h4></footer>
+
+
+
+    <script src="js/bank.js"></script>
+
+</body>
+</html>
